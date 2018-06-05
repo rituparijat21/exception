@@ -1,0 +1,58 @@
+1:
+ZeroDivisionError
+
+a=3
+try:
+    if(a<4):
+        a=a/(a-3)
+        print(a)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+output:
+
+Cannot divide by zero
+
+2:
+IndexError
+
+l=[1,2,3]
+try:
+    print(l[3])
+except IndexError:
+    print("index out of bound")
+
+output
+
+index out of bound
+
+3:
+An exception
+NameError: Hi there
+
+4:
+-5.0
+a/b result in 0
+
+5:
+try:
+    import b
+except ImportError:
+    print("module not found")
+try:
+    a=int(input("Enter a number"))
+except ValueError:
+    print("number can only be integer type")
+l=[1,2,3]
+try:
+    print(l[3])
+except IndexError:
+    print("Array out of bound")
+
+output
+
+module not found
+Enter a number harshit
+number can only be integer type
+Array out of bound
+
